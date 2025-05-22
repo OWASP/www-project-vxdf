@@ -47,8 +47,8 @@ A VXDF document details a specific exploitable path within an application or com
 
 ## Get Involved!
 
-*   **Explore the Specification:** [VXDF Specification](https://github.com/OWASP/vxdf/blob/main/specification/vxdf-specification.md)
-*   **Contribute to the Project:** Visit our [GitHub Repository](https://github.com/OWASP/vxdf) to see how you can help with documentation, tooling, or use cases.
+*   **Explore the Specification:** [VXDF Specification](https://github.com/OWASP/www-project-vxdf/releases/download/draft/Validated.Exploitable.Data.Flow.VXDF.Format.pdf)
+*   **Contribute to the Project:** Visit our [GitHub Repository](https://github.com/mihir-shah99/vxdf) to see how you can help with documentation, tooling, or use cases.
 *   **Implement VXDF:** If you are a tool vendor or have a security product, consider adopting VXDF for reporting exploitable vulnerabilities.
 
 ## License
