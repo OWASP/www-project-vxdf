@@ -9,51 +9,75 @@ pitch: OWASP VXDF is an evidence-backed format for reporting *validated exploita
 
 # OWASP VXDF: The Standard for Verifiable Exploit Evidence
 
-## The Problem: Drowning in Vulnerability Noise
+## The Problem
 
-Security teams and Developers are being overwhelmed by a deluge of vulnerability alerts from various scanning tools (SAST, DAST, SCA). Many of these alerts are false positives or represent theoretical vulnerabilities with no practical exploit path in the given context. This "alert fatigue" leads to:
+Security teams are overwhelmed by vulnerability alerts from scanning tools (SAST, DAST, SCA). Most alerts are false positives or theoretical vulnerabilities with no practical exploit path, leading to:
 
-*   **Wasted Resources:** Valuable time spent triaging and investigating non-critical issues.
-*   **Delayed Remediation:** Truly exploitable vulnerabilities get lost in the noise, increasing risk.
-*   **Developer Frustration:** Constant interruptions for issues that may not be real threats.
-*   **Inconsistent Reporting:** Different tools and researchers report vulnerabilities in disparate, often incompatible formats, making unified risk assessment difficult.
+- **Alert Fatigue:** Wasted time on non-critical issues
+- **Delayed Remediation:** Real threats get lost in the noise
+- **Developer Frustration:** Constant interruptions for non-exploitable issues
+- **Inconsistent Reporting:** Incompatible formats across tools and researchers
 
-## The Solution: OWASP VXDF - Validated Exploitable Data Flow
+## The Solution: VXDF
 
-**OWASP VXDF (Validated Exploitable Data Flow) Format** is a community-driven, open standard designed to address these challenges. It provides a standardized, machine-readable JSON format for describing code vulnerability flows that have been **confirmed as exploitable**, complete with the **trace and mandatory validation evidence**.
+**OWASP VXDF (Validated Exploitable Data Flow)** is a standardized, machine-readable JSON format for describing **confirmed exploitable** code vulnerabilities with mandatory validation evidence.
 
-VXDF focuses on **exploitable truth**, not just theoretical possibilities.
+### Key Features
 
-### Key Goals of VXDF:
+- **Evidence-Based:** Focus on validated exploitable findings, not theoretical possibilities
+- **Standardized Format:** Common language for describing vulnerability exploitation paths
+- **Machine-Readable:** Enables automation in security tools and CI/CD pipelines
+- **Actionable Intelligence:** Clear exploitation steps with concrete proof
 
-*   **Reduce Alert Fatigue:** By focusing on validated exploitable findings, VXDF helps teams prioritize what truly matters.
-*   **Standardize Exploit Evidence:** Provides a common language for describing how a vulnerability is exploited, including the necessary context and proof.
-*   **Enable Automation:** Machine-readable format facilitates integration into security tools, CI/CD pipelines, and vulnerability management systems.
-*   **Improve Collaboration:** Offers a clear and unambiguous way for finders (security tools, researchers) to communicate exploitable vulnerabilities to fixers (developers, operations).
-*   **Enhance Existing Standards:** Complements standards like SARIF and SPDX by adding a layer of validated exploitability information.
+### What VXDF Contains
 
-## How VXDF Works
+- **Vulnerability Identification:** CWE mapping and weakness details
+- **Affected Component:** Precise software/library/code segment information
+- **Exploitation Path:** Step-by-step attack flow from source to sink
+- **Validation Evidence:** Working PoC scripts, HTTP requests/responses, or other verifiable proof
+- **Impact Assessment:** Contextualized severity and business impact
 
-A VXDF document details a specific exploitable path within an application or component. It typically includes:
+## Who Benefits
 
-*   **Vulnerability Identification:** Clear identification of the weakness (e.g., CWE).
-*   **Affected Component:** Precise information about the software, library, or code segment.
-*   **Exploitation Path (Data Flow):** A step-by-step description of how an attacker can trigger the vulnerability, from an entry point (source) to an impact point (sink).
-*   **Validation Evidence:** Concrete proof that the vulnerability is exploitable. This could be a working Proof-of-Concept (PoC) script, HTTP request/response pairs, or other verifiable data.
-*   **Severity and Impact:** Contextualized assessment of the vulnerability's impact.
+- **Security Teams:** Prioritize real threats, reduce noise
+- **Developers:** Get actionable reports with clear evidence
+- **Tool Vendors:** Provide high-fidelity results
+- **Researchers:** Submit findings with verifiable proof
+- **Organizations:** Improve security posture efficiently
 
-## Who Benefits from VXDF?
+## Project Resources
 
-*   **Security Teams:** Prioritize remediation efforts effectively, focusing on confirmed risks.
-*   **Developers:** Receive clear, actionable reports with evidence, reducing time spent on false positives.
-*   **Security Tool Vendors:** Provide higher-fidelity results and integrate more seamlessly into security workflows.
-*   **Bug Bounty Hunters & Researchers:** Submit findings with verifiable proof, leading to faster validation and rewards.
-*   **Organizations:** Improve their overall security posture by addressing real threats more efficiently.
+### Official Links
+- **Project Website:** [vxdf.org](https://vxdf.org)
+- **GitHub Repository:** [github.com/mihir-shah99/vxdf](https://github.com/mihir-shah99/vxdf)
 
-## Get Involved!
+### Documentation & Tools
+- **Schema Specification:** [https://vxdf.org/schema-explorer]()
+- **API Documentation:** [Nromative Schema](https://github.com/mihir-shah99/vxdf/blob/main/docs/normative-schema.json)
+- **Example Files:** [github.com/mihir-shah99/vxdf/blob/main/example1_flow_based.vxdf](https://github.com/mihir-shah99/vxdf/blob/main/test-data/example1_flow_based.vxdf.json)
 
-OWASP VXDF is an open project, and we welcome contributions from the community!
+### Community & Support
+- **Discussions:** [GitHub Discussions](https://github.com/mihir-shah99/vxdf/discussions)
+- **Issue Tracker:** [GitHub Issues](https://github.com/mihir-shah99/vxdf/issues)
 
-*   **Explore the Specification:** [VXDF Specification](https://github.com/OWASP/vxdf/blob/main/specification/vxdf-specification.md)
-*   **Contribute to the Project:** Visit our [GitHub Repository](https://github.com/OWASP/vxdf) to see how you can help with documentation, tooling, or use cases.
-*   **Implement VXDF:** If you are a tool vendor or have a security product, consider adopting VXDF for reporting exploitable vulnerabilities.
+### Integration & Implementation
+- **Tool Integration Guide:** [vxdf.org/integration](https://vxdf.org/integration)
+- **Developer SDKs:** Work In Progress for Python, JavaScript, Go
+- **CI/CD Plugins:** Work In Progress for Jenkins, GitHub Actions, GitLab CI
+
+## Get Involved
+
+**For Contributors:**
+- Review the [Contributing Guide](https://github.com/mihir-shah99/vxdf/blob/main/CONTRIBUTING.md)
+- Check [Good First Issues](https://github.com/mihir-shah99/vxdf/labels/good%20first%20issue)
+- Join our [Slack channel](https://owasp.slack.com/archives/C08T85605RS)
+
+**For Tool Vendors:**
+- Implement VXDF in your security products
+- Contact us for integration support
+- Access our [Vendor Partnership Program](https://vxdf.org/partners)
+
+**For Organizations:**
+- Pilot VXDF in your security workflow
+- Share feedback and use cases
+- Join our [Advisory Board](https://vxdf.org/advisory-board)
