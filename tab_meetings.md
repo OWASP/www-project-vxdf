@@ -12,7 +12,7 @@ tags: vxdf
 
 **Every Tuesday, 8:00 AM - 9:00 AM Pacific Time**
 
-- **Next Meeting:** June 9, 2025 at 8:00 AM PT
+- **Next Meeting:** June 10, 2025 at 8:00 AM PT
 - **Join:** [Google Meet](https://meet.google.com/sxb-tjao-ucp)
 - **Add to Calendar:** [Google Calendar Event](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTBxdDlwbWpmdXMxM29rYzFxanJmdGJkYjZfMjAyNTA2MTBUMTUwMDAwWiBtaWhpci5zaGFoQG93YXNwLm9yZw&tmsrc=mihir.shah%40owasp.org&scp=ALL)
 - **Agenda:** [Google Docs](https://docs.google.com/document/d/1Hc5nmbVnyr5gExA9Z0rJSzXYhTYdQv0NBgve7UXdnHM/edit?usp=sharing)
