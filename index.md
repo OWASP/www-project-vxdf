@@ -53,7 +53,7 @@ Security teams are overwhelmed by vulnerability alerts from scanning tools (SAST
 
 ### Documentation & Tools
 - **Schema Specification:** [https://vxdf.org/schema-explorer]()
-- **API Documentation:** [Nromative Schema](https://github.com/mihir-shah99/vxdf/blob/main/docs/normative-schema.json)
+- **API Documentation:** [Normative Schema](https://github.com/mihir-shah99/vxdf/blob/main/docs/normative-schema.json)
 - **Example Files:** [github.com/mihir-shah99/vxdf/blob/main/example1_flow_based.vxdf](https://github.com/mihir-shah99/vxdf/blob/main/test-data/example1_flow_based.vxdf.json)
 
 ### Community & Support
