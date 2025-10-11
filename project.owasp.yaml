@@ -1,0 +1,35 @@
+audience:
+  - breaker
+  - builder
+community:
+  - name: project-vxdf
+    platform: slack
+    url: https://owasp.slack.com/archives/C08T85605RS
+leaders:
+  - name: Mihir Shah
+    email: mihir.shah@owasp.org
+    github: mihir-shah99
+level: 2
+license:
+  - CC-BY-SA-4.0
+name: OWASP VXDF (Validated Exploitable Data Flow) Format
+pitch: OWASP VXDF is an evidence-backed format for reporting *validated exploitable* code vulnerabilities, designed to cut through alert fatigue, provide
+  precise actionable insights, and standardize proof of exploitability across the security ecosystem.
+repositories:
+  - name: www-project-vxdf
+    url: https://github.com/OWASP/www-project-vxdf
+    description: OWASP Foundation web repository
+  - name: vxdf
+    url: https://github.com/mihir-shah99/vxdf
+tags:
+  - vxdf
+  - validated exploitable flow
+  - vulnerability management
+  - security automation
+  - evidence-based security
+  - sarif
+  - spdx
+  - devsecops
+  - responsible disclosure
+type: code
+website: https://owasp.org/www-project-vxdf
