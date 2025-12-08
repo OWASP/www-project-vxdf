@@ -7,77 +7,225 @@ type: code
 pitch: OWASP VXDF is an evidence-backed format for reporting *validated exploitable* code vulnerabilities, designed to cut through alert fatigue, provide precise actionable insights, and standardize proof of exploitability across the security ecosystem.
 ---
 
-# OWASP VXDF: The Standard for Verifiable Exploit Evidence
+<style type="text/css">
+.vxdf-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-## The Problem
+.vxdf-hero h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
 
-Security teams are overwhelmed by vulnerability alerts from scanning tools (SAST, DAST, SCA). Most alerts are false positives or theoretical vulnerabilities with no practical exploit path, leading to:
+.vxdf-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
 
-- **Alert Fatigue:** Wasted time on non-critical issues
-- **Delayed Remediation:** Real threats get lost in the noise
-- **Developer Frustration:** Constant interruptions for non-exploitable issues
-- **Inconsistent Reporting:** Incompatible formats across tools and researchers
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
 
-## The Solution: VXDF
+.feature-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
 
-**OWASP VXDF (Validated Exploitable Data Flow)** is a standardized, machine-readable JSON format for describing **confirmed exploitable** code vulnerabilities with mandatory validation evidence.
+.feature-card h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
 
-### Key Features
+.resource-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
 
-- **Evidence-Based:** Focus on validated exploitable findings, not theoretical possibilities
-- **Standardized Format:** Common language for describing vulnerability exploitation paths
-- **Machine-Readable:** Enables automation in security tools and CI/CD pipelines
-- **Actionable Intelligence:** Clear exploitation steps with concrete proof
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
 
-### What VXDF Contains
+.cta-section {
+  background: #28a745;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem 0;
+}
 
-- **Vulnerability Identification:** CWE mapping and weakness details
-- **Affected Component:** Precise software/library/code segment information
-- **Exploitation Path:** Step-by-step attack flow from source to sink
-- **Validation Evidence:** Working PoC scripts, HTTP requests/responses, or other verifiable proof
-- **Impact Assessment:** Contextualized severity and business impact
+.cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
 
-## Who Benefits
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #667eea;
+  font-size: 1.3rem;
+  margin: 3rem 0;
+  padding: 1rem;
+  border-top: 2px solid #667eea;
+  border-bottom: 2px solid #667eea;
+}
+</style>
 
-- **Security Teams:** Prioritize real threats, reduce noise
-- **Developers:** Get actionable reports with clear evidence
-- **Tool Vendors:** Provide high-fidelity results
-- **Researchers:** Submit findings with verifiable proof
-- **Organizations:** Improve security posture efficiently
+<div class="vxdf-hero">
+  <h1>🛡️ VXDF: Evidence-Based Vulnerability Intelligence</h1>
+  <p>The first standardized format for reporting <strong>validated exploitable</strong> vulnerabilities with proof</p>
+</div>
 
-## Project Resources
+## What is VXDF?
 
-### Official Links
-- **Project Website:** [vxdf.org](https://vxdf.org)
-- **GitHub Repository:** [github.com/mihir-shah99/vxdf](https://github.com/mihir-shah99/vxdf)
+**OWASP VXDF (Validated Exploitable Data Flow)** is a revolutionary approach to vulnerability reporting that focuses on **confirmed exploitable** code vulnerabilities with mandatory validation evidence. Unlike traditional vulnerability scanners that generate noise, VXDF provides actionable intelligence that security teams can trust.
 
-### Documentation & Tools
-- **Schema Specification:** [https://vxdf.org/schema-explorer]()
-- **API Documentation:** [Normative Schema](https://github.com/mihir-shah99/vxdf/blob/main/docs/normative-schema.json)
-- **Example Files:** [github.com/mihir-shah99/vxdf/blob/main/example1_flow_based.vxdf](https://github.com/mihir-shah99/vxdf/blob/main/test-data/example1_flow_based.vxdf.json)
+### The Alert Fatigue Problem
 
-### Community & Support
-- **Discussions:** [GitHub Discussions](https://github.com/mihir-shah99/vxdf/discussions)
-- **Issue Tracker:** [GitHub Issues](https://github.com/mihir-shah99/vxdf/issues)
+Security teams are drowning in vulnerability alerts from scanning tools (SAST, DAST, SCA). The overwhelming majority are false positives or theoretical vulnerabilities with no practical exploit path, resulting in:
 
-### Integration & Implementation
-- **Tool Integration Guide:** [vxdf.org/integration](https://vxdf.org/integration)
-- **Developer SDKs:** Work In Progress for Python, JavaScript, Go
-- **CI/CD Plugins:** Work In Progress for Jenkins, GitHub Actions, GitLab CI
+- 🚨 **Alert Fatigue:** Teams waste 70%+ of their time on non-critical issues
+- ⏰ **Delayed Response:** Real threats get buried in the noise  
+- 😤 **Developer Frustration:** Constant interruptions for non-exploitable findings
+- 📊 **Inconsistent Data:** Incompatible formats across security tools
 
-## Get Involved
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>🔍 Evidence-Based</h3>
+    <p>Every vulnerability includes concrete proof of exploitability - no more guessing if threats are real</p>
+  </div>
+  
+  <div class="feature-card">
+    <h3>⚙️ Machine-Readable</h3>
+    <p>JSON format enables seamless automation in security tools and CI/CD pipelines</p>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🎯 Actionable Intelligence</h3>
+    <p>Clear exploitation paths and concrete proof help teams prioritize effectively</p>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🔗 Standards-Aligned</h3>
+    <p>Compatible with SARIF, SPDX, and other security frameworks</p>
+  </div>
+</div>
 
-**For Contributors:**
-- Review the [Contributing Guide](https://github.com/mihir-shah99/vxdf/blob/main/CONTRIBUTING.md)
-- Check [Good First Issues](https://github.com/mihir-shah99/vxdf/labels/good%20first%20issue)
-- Join our [Slack channel](https://owasp.slack.com/archives/C08T85605RS)
+## What VXDF Contains
 
-**For Tool Vendors:**
-- Implement VXDF in your security products
-- Contact us for integration support
-- Access our [Vendor Partnership Program](https://vxdf.org/partners)
+- **🆔 Vulnerability Identification:** CWE mapping and comprehensive weakness details
+- **📦 Affected Components:** Precise software/library/code segment information  
+- **🛤️ Exploitation Path:** Step-by-step attack flow from source to sink
+- **✅ Validation Evidence:** Working PoC scripts, HTTP requests/responses, or other verifiable proof
+- **⚖️ Impact Assessment:** Contextualized severity and business impact analysis
 
-**For Organizations:**
-- Pilot VXDF in your security workflow
-- Share feedback and use cases
-- Join our [Advisory Board](https://vxdf.org/advisory-board)
+## Who Benefits from VXDF?
+
+- **🛡️ Security Teams:** Cut through the noise and focus on real threats
+- **👨‍💻 Developers:** Receive clear, actionable reports with evidence
+- **🏢 Tool Vendors:** Provide high-fidelity results that teams actually trust
+- **🕵️ Security Researchers:** Submit findings with verifiable proof of concept
+- **🏛️ Organizations:** Dramatically improve security posture efficiency
+
+<div class="resource-section">
+  <h2>📚 Project Resources</h2>
+  
+  <div class="resource-grid">
+    <div>
+      <h3>🔗 Official Links</h3>
+      <ul>
+        <li><strong>Project Website:</strong> <a href="https://vxdf.org">vxdf.org</a></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/mihir-shah99/vxdf">mihir-shah99/vxdf</a></li>
+        <li><strong>Schema Explorer:</strong> <a href="https://vxdf.org/schema-explorer">Interactive Schema</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>📖 Documentation & Tools</h3>
+      <ul>
+        <li><strong>Normative Schema:</strong> <a href="https://github.com/mihir-shah99/vxdf/blob/main/docs/normative-schema.json">JSON Schema v0.2</a></li>
+        <li><strong>Example Files:</strong> <a href="https://github.com/mihir-shah99/vxdf/blob/main/test-data/example1_flow_based.vxdf.json">Sample VXDF</a></li>
+        <li><strong>Integration Guide:</strong> <a href="https://vxdf.org/integration">Tool Integration</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>👥 Community & Support</h3>
+      <ul>
+        <li><strong>Weekly Meetings:</strong> Tuesdays 8 AM PT</li>
+        <li><strong>Discussions:</strong> <a href="https://github.com/mihir-shah99/vxdf/discussions">GitHub Discussions</a></li>
+        <li><strong>Issues:</strong> <a href="https://github.com/mihir-shah99/vxdf/issues">Bug Reports & Features</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>🔧 Current Development</h3>
+      <ul>
+        <li><strong>SDK Status:</strong> Python ✅, JavaScript & Go 🔄</li>
+        <li><strong>Parser Support:</strong> Snyk, Semgrep, OWASP ZAP 🔄</li>
+        <li><strong>Intelligence Engine:</strong> Enhanced correlation 🔄</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>🚀 Get Involved Today!</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+    <div>
+      <h3>💻 For Contributors</h3>
+      <ul style="text-align: left;">
+        <li>Review the <a href="https://github.com/mihir-shah99/vxdf/blob/main/CONTRIBUTING.md" style="color: white;">Contributing Guide</a></li>
+        <li>Check <a href="https://github.com/mihir-shah99/vxdf/labels/good%20first%20issue" style="color: white;">Good First Issues</a></li>
+        <li>Join our <a href="https://owasp.slack.com/archives/C08T85605RS" style="color: white;">Slack channel</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>🏢 For Tool Vendors</h3>
+      <ul style="text-align: left;">
+        <li>Implement VXDF in your security products</li>
+        <li>Access our <a href="https://vxdf.org/partners" style="color: white;">Partnership Program</a></li>
+        <li>Contact us for integration support</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>🏛️ For Organizations</h3>
+      <ul style="text-align: left;">
+        <li>Pilot VXDF in your security workflow</li>
+        <li>Join our <a href="https://vxdf.org/advisory-board" style="color: white;">Advisory Board</a></li>
+        <li>Share feedback and use cases</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+### Related OWASP Projects
+
+* [OWASP SARIF](https://owasp.org/www-project-sarif/) - Static Analysis Results Interchange Format
+* [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/) - Software Composition Analysis
+* [OWASP ZAP](https://owasp.org/www-project-zap/) - Web Application Security Scanner
+
+----
+
+<div class="tagline">
+  <strong>VXDF: <em>Making vulnerability intelligence actionable, not overwhelming</em></strong>
+</div>
